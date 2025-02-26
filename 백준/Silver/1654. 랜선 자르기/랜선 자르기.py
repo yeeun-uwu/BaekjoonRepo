@@ -2,7 +2,7 @@ import sys as s
 
 def can_make(lines, len, n):
     if n == 0 or len == 0:
-        return True
+        return True #ZeroDivisionError 예외처리 
     ans = 0
     for i in lines:
         ans += i // len
